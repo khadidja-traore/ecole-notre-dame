@@ -1,0 +1,38 @@
+body,
+html {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 22px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+h1,
+h2 {
+  color: #bb3a67;
+  margin-left: 2%;
+}
+
+#strupedagogique {
+  min-height: 100%;
+  margin: 2%;
+  padding: 1.5%;
+  padding-bottom: 2%;
+  background-color: #075a71;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Le responsive ___________________________________________________________ */
+
+@media (max-width: 640px) {
+  /* CSS mobile ici */
+}

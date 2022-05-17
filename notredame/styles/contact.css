@@ -1,0 +1,90 @@
+*{
+font-family: Arial, Helvetica, sans-serif;  
+}
+body{
+background-color: #4790B1;
+}
+.containerNav {
+    background-color: #4790B1;
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px auto; /*2 colonnes avec la dernireè qui prend le reste la largeur*/
+  }
+  /*les liens dans la  nav bar*/
+  .containerNav a {
+    color: white;
+    text-decoration: none;
+    margin: 2%;
+  }
+  /*logo en haut à gauche*/
+  #logo {
+    max-width: 50px;
+  }
+  /* pour aligner les liens à gauche, les centrer et leur donner une taille  */
+  .menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+  }
+  /* bouton 'Se connecter' */
+  #divSeconnecter {
+    background-color: #AA043F;
+    text-align: center;
+    margin-right: 1%;
+  }
+
+  /* CSS PAGE CONTACT */
+.containerContact{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+}
+
+.contact{
+    text-align: center;
+    border: 2px solid black;
+    width: 40%;
+    background-color: rgba(211, 211, 211, 0.596);
+}
+
+#nom{
+    margin-top: 2%;  
+}
+#email{
+   margin-top: 2%; 
+}
+#objet{
+    margin-top: 2%; 
+}
+#message{
+    margin-top: 2%;
+}
+
+#submit_button{
+    background-color: #f4444c;
+    color: white;
+    border: 1px solid #f4444c;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.carte{
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    .containerContact{
+        flex-direction: column;
+    }
+    .contact{
+        width: auto;
+        justify-content: center;
+    }
+    iframe{
+        width: auto;
+    }
+}
+
+

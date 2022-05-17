@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.blabla h3 {
+  font-size: 40px;
+}
+#Activite {
+  background-color: #49768a;
+  /*  background-color: #4790B1; */
+}
+/* la partie des activité Pédagogique ___________________________________________________________*/
+.containeractivite {
+  margin-left: 0%;
+  margin-right: 0%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 540px;
+  font-size: 40px;
+}
+.ActiPeda {
+  width: 50%;
+  display: flex;
+  /* background-color: #e15454; */
+  background-image: url("../img/actipeda.jpg");
+  color: #4790b1;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  text-decoration: none;
+}
+.actped {
+  background-color: rgba(211, 211, 211, 0.774);
+  padding: 2%;
+}
+
+/* la partie des activité Périscolaire ___________________________________________________________*/
+.ActiPeri {
+  width: 50%;
+  display: flex;
+  background-image: url("../img/actiper.jpg");
+  color: #4790b1;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  text-decoration: none;
+}
+.containerinscrip {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 540px;
+  display: flex;
+}
+/* la partie bouton c'est partie ___________________________________________________________ */
+.cespartie {
+  width: 50%;
+  display: flex;
+  background-image: url("../img/inscription.jpg");
+  color: #4790b1;
+  background-size: cover;
+  height: 100%;
+  text-decoration: none;
+}
+.button {
+  display: block;
+  margin: auto auto;
+  color: white;
+  background-color: #e15454;
+  height: 45px;
+  width: 123px;
+  margin: auto auto;
+  box-shadow: 1px 1px 5px #050505;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* inscription à Notre Dame ___________________________________________________________ */
+.inscrinnote {
+  width: 50%;
+  background-color: #4790b1;
+  color: white;
+  font-size: 16px;
+  background-size: cover;
+  height: 100%;
+  text-decoration: none;
+}
+.blabla {
+  margin-top: 22.5%;
+  margin-left: 3%;
+  margin-right: 10%;
+}
+.inscriiii {
+  margin-top: 3%;
+}
+/* Le responsive ___________________________________________________________ */
+
+@media (max-width: 640px) {
+  /* CSS mobile ici */
+  h3 {
+    font-size: 20px;
+  }
+  .containeractivite {
+    height: 240px;
+    font-size: 20px;
+  }
+  .containerinscrip {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 240px;
+  }
+  .inscrinnote {
+    font-size: 12px;
+  }
+  .blabla {
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 7%;
+  }
+}

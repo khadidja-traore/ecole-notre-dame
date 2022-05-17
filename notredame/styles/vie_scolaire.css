@@ -1,0 +1,133 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 952px 952px;
+  background-color: #4790b1;
+}
+/*vie ecole*/
+#vie_ec {
+  background-color: #4790b1;
+}
+
+#vie_ec h2 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+
+/* Horaire */
+
+.horaire {
+  padding: 2%;
+}
+
+#calendrier {
+  background-color: #315769;
+}
+
+#calendrier h2 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+
+#calendrier h3 {
+  text-align: center;
+  color: #e15454;
+}
+
+#calendrier p {
+  text-align: center;
+  color: white;
+}
+
+/* item vie de l'ecole */
+
+.item:hover {
+  background-color: #e15454;
+  color: white;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.item {
+  background-color: white;
+  margin: 20px 10px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #050505;
+}
+
+.item h3,
+.item p {
+  padding: 5px 10px;
+}
+
+#vignette {
+  height: 80px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Button */
+
+.button {
+  display: block;
+  margin: auto auto;
+  color: white;
+  background-color: #e15454;
+  height: 45px;
+  width: 123px;
+  box-shadow: 1px 1px 5px #050505;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+span {
+  margin: 10%;
+}
+
+/* Responsive */
+
+@media screen and (orientation: portrait) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+  }
+}
