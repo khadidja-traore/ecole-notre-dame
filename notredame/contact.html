@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="containerNav">
+      <!-- Logo de l'école  -->
+      <div>
+        <a href="index.html">
+          <img id="logo" src="img/logo_notredame_rogné.png" alt="Logo notre dame" />
+        </a>
+      </div>
+      <!-- Menu -->
+      <div class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="">Activités</a>
+        <a href="">Inscriptions</a>
+        <a href="">Nous contacter</a>
+        <a href="">Associations</a>
+        <a href="">Ecole Direct</a>
+        <div id="divSeconnecter">
+          <a href="">Se connecter</a>
+        </div>
+      </div>
+    </nav>
+    <div class="containerContact">
+      <!------------------------------------------ FORMULAIRE CONTACT -------------------------------------->
+      <div class="contact">
+        <h2>Nous contacter</h2>
+        <form id="formecontact" method="post" action="#">
+          <label for="nom"> Votre nom</label><br />
+          <input
+            type="text"
+            placeholder="entrez votre nom"
+            name="nom"
+            id="nom"
+            required
+          /><br /><br />
+          <label for="email">Votre email</label><br />
+          <input
+            type="mail"
+            placeholder="entrez votre email"
+            name="email"
+            id="email"
+            required
+          /><br /><br />
+          <label for="objet">Objet du message </label><br />
+          <input
+            type="text"
+            placeholder="objet du message"
+            name="objet"
+            id="objet"
+          /><br /><br />
+          <label for="message"> Votre message</label><br />
+          <textarea
+            placeholder="votre message"
+            name="message"
+            id="message"
+            cols="50"
+            rows="10"
+            required
+          ></textarea
+          ><br /><br />
+          <input id="submit_button" type="submit" value="Envoyer" />
+        </form>
+      </div>
+      <!------------------------------------------ FIN FORMULAIRE CONTACT -------------------------------------->
+
+      <!------------------------------------------ MAP -------------------------------------->
+      <div class="carte">
+        <h2>Nous trouver</h2>
+        <p>
+          Ecole Notre-Dame <br />
+          4 rue de Somme Py <br />
+          95100 Argenteuil
+        </p>
+        <p>
+          Téléphone: <br />
+          01.39.82.62.07 <br />
+        </p>
+        <p>
+          Les lundi, mardi, jeudi et vendredi. <br />
+          De 8h00 à 13h30 et de 14h30 à 18h00.
+        </p>
+        <p>
+          email: <br />
+          <a href="#">contact@notredame95.fr</a>
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.619688839592!2d2.2278184153568654!3d48.96072707929773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e666f297040077%3A0xe4d5b63aa63f96b5!2s4%20Rue%20de%20Somme%20Py%2C%2095100%20Argenteuil!5e0!3m2!1sfr!2sfr!4v1648626279033!5m2!1sfr!2sfr"
+          width="460"
+          height="320"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <!------------------------------------------ FIN MAP -------------------------------------->
+    </div>
+
+    <!-- <div id="after_submit"></div> -->
+    <!-- <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <label class="required" for="name"> Votre NOM:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+            <label class="required" for="email">Votre Mail :</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+        </div>
+
+        <div class="row">
+            <label class="required" for="objet">Objet du message :</label><br />
+            <input id="objet" class="input" name="objet" type="text" value="" size="30" /><br />
+            <span id="objet_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+            <label class="required" for="message">Votre message:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+        </div>
+            
+            <input id="submit_button" type="submit" value="Envoyer email" />
+        </form>
+
+    <div class="resp_container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.619688839592!2d2.2278184153568654!3d48.96072707929773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e666f297040077%3A0xe4d5b63aa63f96b5!2s4%20Rue%20de%20Somme%20Py%2C%2095100%20Argenteuil!5e0!3m2!1sfr!2sfr!4v1648626279033!5m2!1sfr!2sfr" width="460" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div id="mailzer">
+        <img id="mail" src="C:\Users\Stagiaire\Desktop\th.jpg" alt="mail" > 
+        <p> contact@notredame95.fr</p>
+    </div>
+
+
+
+    <img src="C:\Users\Stagiaire\Desktop\tel.png" alt="phone">
+    <img  id="adresse"src="C:\Users\Stagiaire\Desktop\adresse.png" alt="adresse"> <br> -->
+  </body>
+</html>
